@@ -1,85 +1,32 @@
 import { Link } from "react-scroll";
 
 const NavBar = () => {
-
-const likn = (
-  <>
-    <li>
-      <Link
-        to="home"
-        smooth={true}
-        duration={500}
-        offset={-80}
-        spy={true}
-        activeClass="text-blue-500 font-extrabold border-b-2 border-blue-500"
-        className="text-xl font-extrabold cursor-pointer"
-      >
-        Home
-      </Link>
-    </li>
-    <li>
-      <Link
-        to="project"
-        smooth={true}
-        duration={500}
-        offset={-80}
-        spy={true}
-        activeClass="text-blue-500 font-extrabold border-b-2 border-blue-500"
-        className="text-xl font-extrabold cursor-pointer"
-      >
-        Project
-      </Link>
-    </li>
-    <li>
-      <Link
-        to="skills"
-        smooth={true}
-        duration={500}
-        offset={-80}
-        spy={true}
-        activeClass="text-blue-500 font-extrabold border-b-2 border-blue-500"
-        className="text-xl font-extrabold cursor-pointer"
-      >
-        Skills
-      </Link>
-    </li>
-    <li>
-      <Link
-        to="about"
-        smooth={true}
-        duration={500}
-        offset={-80}
-        spy={true}
-        activeClass="text-blue-500 font-extrabold border-b-2 border-blue-500"
-        className="text-xl font-extrabold cursor-pointer"
-      >
-        About
-      </Link>
-    </li>
-    <li>
-      <Link
-        to="contact"
-        smooth={true}
-        duration={500}
-        offset={-80}
-        spy={true}
-        activeClass="text-blue-500 font-extrabold border-b-2 border-blue-500"
-        className="text-xl font-extrabold cursor-pointer"
-      >
-        Contact
-      </Link>
-    </li>
-  </>
-);
-
-
+  const navItems = (
+    <>
+      {["home", "project", "skills", "about", "contact"].map((item) => (
+        <li key={item}>
+          <Link
+            to={item}
+            smooth={true}
+            duration={500}
+            offset={-80}
+            spy={true}
+            activeClass="text-blue-500 font-extrabold border-b-2 border-blue-500"
+            className="text-xl font-extrabold cursor-pointer"
+          >
+            {item.charAt(0).toUpperCase() + item.slice(1)}
+          </Link>
+        </li>
+      ))}
+    </>
+  );
 
   return (
-    <div className="sticky top-0 z-50 bg-gray-200  px-4">
-      <div className="navbar">
+    <div className="w-full sticky top-0 z-50 bg-gray-200 px-4 shadow">
+      <div className="navbar max-w-7xl mx-auto">
         {/* Start */}
         <div className="navbar-start">
-          <Link to="/">
+          <Link to="home" smooth={true} duration={500} offset={-80} className="cursor-pointer">
             <div className="flex items-center">
               <div className="avatar">
                 <div className="w-10 rounded-full bg-blue-500">
@@ -94,10 +41,8 @@ const likn = (
         </div>
 
         {/* Center */}
-        <div className="navbar-center hidden md:block lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-5">
-{likn}
-          </ul>
+        <div className="navbar-center hidden md:flex">
+          <ul className="menu menu-horizontal px-1 gap-5">{navItems}</ul>
         </div>
 
         {/* End */}
@@ -116,19 +61,14 @@ const likn = (
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-40"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-40"
             >
-              {likn}
+              {navItems}
             </ul>
           </div>
         </div>
