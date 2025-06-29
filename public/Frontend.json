@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "HTML",
+    "img": "https://i.ibb.co/cKkCgMkX/html.png"
+  },
+  {
+    "id": 2,
+    "title": "CSS",
+    "img": "https://i.ibb.co/q3H5pXPc/css.png"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "img": "https://i.ibb.co/9mfcYwZG/javascript.png"
+  },
+  {
+    "id": 4,
+    "title": "ReactJS",
+    "img": "https://i.ibb.co/211mF9C3/reactjs.png"
+  },
+  {
+    "id": 5,
+    "title": "TailwindCSS",
+    "img": "https://i.ibb.co/7tzv9vtR/tailwindcss.png"
+  },
+  {
+    "id": 6,
+    "title": "Bootstrap",
+    "img": "https://i.ibb.co/Rk1G2dKP/bootstrap.png"
+  }
+]
