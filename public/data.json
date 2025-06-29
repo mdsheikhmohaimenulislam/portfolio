@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "title": "GreenNest",
+    "img": "https://i.ibb.co/bjNhNyYT/A10.png",
+    "description": "GreenNest is Bangladesh’s ultimate destination for plant lovers! Whether you’re just starting your gardening journey or you’re a seasoned plant parent, GreenNest helps you discover unique plants, master care tips, and create your own lush, green sanctuary. Explore, learn, and grow with a vibrant community that shares your love for all things green.",
+    "category": [
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Firebase",
+      "React Router",
+      "Express.js",
+      "MongoDB",
+      "Node.js"
+    ],
+    "challenges": "Deciding whether to store JWT in localStorage (vulnerable to XSS) or HTTP-only cookies (requires backend setup) is a common challenge.",
+    "futurePlans": "Enhance the system with fine-grained role permissions using JWT claims for secure authorization."
+  },
+  {
+    "id": 2,
+    "title": "CSS Styling",
+    "img": "https://i.ibb.co/q3H5pXPc/css.png",
+    "description": "Master the art of styling websites using CSS, including layouts, colors, and responsive design.",
+    "category": [
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Firebase",
+      "React Router",
+      "Express.js",
+      "MongoDB",
+      "Node.js"
+    ],
+    "challenges": "Deciding whether to store JWT in localStorage (vulnerable to XSS) or HTTP-only cookies (requires backend setup) is a common challenge.",
+    "futurePlans": "Track and manage JWT sessions per device/user for better control and monitoring."
+  },
+  {
+    "id": 3,
+    "title": "JavaScript Essentials",
+    "img": "https://i.ibb.co/9mfcYwZG/javascript.png",
+    "description": "Understand how to make websites interactive and dynamic with core JavaScript concepts.",
+    "category": [
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Firebase",
+      "React Router"
+    ],
+    "challenges": "Debugging asynchronous code was challenging for me.",
+    "futurePlans": "Implement real-time code editor with live preview."
+  }
+]
