@@ -44,19 +44,21 @@ const Banner = () => {
           </h3>
 
           <p className="mb-6">
-            I'm a creative and detail-oriented Frontend Developer who loves
-            designing websites. My toolkit includes React, Next.js, and
-            TailwindCSS to deliver fast, responsive user experiences.
+            I’m a Front End Developer with hands-on experience in building
+            dynamic web applications. I’m always curious to learn new
+            technologies and improve my skills. Eager to learn, grow, and
+            contribute to real-world projects in a collaborative development
+            environment.
           </p>
 
           <div className="flex mb-3 gap-2 items-center justify-center md:justify-center ">
-<a
-  href="/Mohaimenulislam.pdf"
-  download
-  className="inline-block text-sm sm:text-base bg-blue-500 text-white font-bold rounded-2xl px-4 py-2 hover:bg-blue-600 transition"
->
-  Download Resume
-</a>
+            <a
+              href="/MohaimenulIslam resume (2).pdf"
+              download
+              className="inline-block text-sm sm:text-base bg-blue-500 text-white font-bold rounded-2xl px-4 py-2 hover:bg-blue-600 transition"
+            >
+              Download Resume
+            </a>
             <Link to="https://github.com/mdsheikhmohaimenulislam">
               <FaGithub size={30} />
             </Link>

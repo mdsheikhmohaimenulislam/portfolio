@@ -53,7 +53,7 @@ const Contact = () => {
             <CiLocationOn size={20} /> <span className="ml-2">BANGLADESH DHAKA</span>
               </p>
               <p className="flex items-center">
-                📞 <span className="ml-2">01715755177</span>
+                📞 <span className="ml-2">+8801715755177</span>
               </p>
               <p className="flex items-center">
                 <AiOutlineMail size={20} /> <span className="ml-2">mdsheikhmohaimenulislam@gmail.com</span>

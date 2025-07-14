@@ -87,7 +87,7 @@ const NavBar = () => {
               {navItems}
               <li>
                 <a
-                  href="/resume.pdf"
+                  href="/MohaimenulIslam resume (2).pdf"
                   download
                   className="bg-blue-500 text-white px-3 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
                 >
