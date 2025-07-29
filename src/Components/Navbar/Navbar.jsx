@@ -55,7 +55,7 @@ const NavBar = () => {
         <div className="navbar-end">
           {/* Resume Button */}
           <a
-            href="/Mohaimenulislam.pdf"
+            href="/MohaimenulIslam resume (Front).pdf"
             download
             className="hidden  lg:inline-block text-sm sm:text-base bg-blue-500 text-white font-bold rounded-2xl px-4 py-2 hover:bg-blue-600 transition"
           >
@@ -87,7 +87,7 @@ const NavBar = () => {
               {navItems}
               <li>
                 <a
-                  href="/MohaimenulIslam resume (2).pdf"
+                  href="/MohaimenulIslam resume (Front).pdf"
                   download
                   className="bg-blue-500 text-white px-3 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
                 >
