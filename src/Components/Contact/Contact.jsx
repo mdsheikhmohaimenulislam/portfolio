@@ -10,7 +10,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILL_SERVICEID,
@@ -47,16 +47,20 @@ const Contact = () => {
           {/* Left Side Info */}
           <div className="py-6 md:py-0 md:px-6">
             <h1 className="text-4xl font-bold">Connect With Me</h1>
-            <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
+            <p className="pt-2 pb-4">
+              Fill in the form to start a conversation
+            </p>
             <div className="space-y-4">
               <p className="flex items-center">
-            <CiLocationOn size={20} /> <span className="ml-2">BANGLADESH DHAKA</span>
+                <CiLocationOn size={20} />{" "}
+                <span className="ml-2">BANGLADESH DHAKA</span>
               </p>
               <p className="flex items-center">
                 📞 <span className="ml-2">+8801715755177</span>
               </p>
               <p className="flex items-center">
-                <AiOutlineMail size={20} /> <span className="ml-2">mdsheikhmohaimenulislam@gmail.com</span>
+                <AiOutlineMail size={20} />{" "}
+                <span className="ml-2">mdsheikhmohaimenulislam@gmail.com</span>
               </p>
             </div>
           </div>
