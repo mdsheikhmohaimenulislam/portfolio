@@ -1,0 +1,21 @@
+[
+  { "name": "HTML", "logo": "/html.png" },
+  { "name": "CSS", "logo": "/css.png" },
+  { "name": "JavaScript", "logo": "/javascript.png" },
+  { "name": "TypeScript", "logo": "/typescript.png" },
+  { "name": "ReactJS", "logo": "/reactjs.png" },
+  { "name": "Next.js", "logo": "/nextjs.png" },
+  { "name": "Tailwind CSS", "logo": "/tailwindcss.png" },
+  { "name": "Bootstrap", "logo": "/bootstrap.png" },
+  { "name": "GitHub", "logo": "/github.png" },
+  { "name": "VS Code", "logo": "/vscode.png" },
+  { "name": "Figma", "logo": "/figma.png" },
+  { "name": "Netlify", "logo": "/netlify.png" },
+  { "name": "Node.js", "logo": "/nodejs.png" },
+  { "name": "Express.js", "logo": "/express.png" },
+  { "name": "Mongoose", "logo": "/mongoose.png" },
+  { "name": "Postman", "logo": "/postman.png" },
+  { "name": "Vercel", "logo": "/vercel.png" },
+  { "name": "MongoDB", "logo": "/mongodb.png" },
+  { "name": "Firebase", "logo": "/firebase.png" }
+]

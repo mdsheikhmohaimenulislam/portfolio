@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import CV from "../Banner/CV";
 
 const NavBar = () => {
   const navItems = (
@@ -54,13 +55,7 @@ const NavBar = () => {
         {/* Navbar End */}
         <div className="navbar-end">
           {/* Resume Button */}
-          <a
-            href="/MohaimenulIslam resume (Front).pdf"
-            download
-            className="hidden  lg:inline-block text-sm sm:text-base bg-blue-500 text-white font-bold rounded-2xl px-4 py-2 hover:bg-blue-600 transition"
-          >
-            Download Resume
-          </a>
+          <CV />
 
           {/* Mobile Dropdown */}
           <div className="dropdown dropdown-end lg:hidden ml-2">

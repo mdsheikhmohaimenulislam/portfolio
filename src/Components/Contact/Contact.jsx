@@ -4,13 +4,14 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { CiLocationOn } from "react-icons/ci";
 import { AiOutlineMail } from "react-icons/ai";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 const Contact = () => {
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILL_SERVICEID,
@@ -52,14 +53,17 @@ const Contact = () => {
             </p>
             <div className="space-y-4">
               <p className="flex items-center">
-                <CiLocationOn size={20} />{" "}
+                <CiLocationOn size={25} />{" "}
                 <span className="ml-2">BANGLADESH DHAKA</span>
+              </p>
+              <p className="flex items-center">
+                <FaWhatsappSquare className=" text-green-500" size={25} /> <span className="ml-2">+8801715755177</span>
               </p>
               <p className="flex items-center">
                 📞 <span className="ml-2">+8801715755177</span>
               </p>
               <p className="flex items-center">
-                <AiOutlineMail size={20} />{" "}
+                <AiOutlineMail className="text-yellow-800" size={25} />{" "}
                 <span className="ml-2">mdsheikhmohaimenulislam@gmail.com</span>
               </p>
             </div>

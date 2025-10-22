@@ -1,9 +1,7 @@
-import React from "react";
-import { BsFacebook } from "react-icons/bs";
-import { FaGithub, FaWhatsapp } from "react-icons/fa6";
 import Tilt from "react-parallax-tilt";
-import { Link } from "react-router";
 import { TypeAnimation } from "react-type-animation";
+import MediaLink from "./MediaLink";
+import CV from "./CV";
 
 const Banner = () => {
   return (
@@ -52,27 +50,8 @@ const Banner = () => {
           </p>
 
           <div className="flex mb-3 gap-2 items-center justify-center md:justify-center ">
-            <a
-              href="/MohaimenulIslam resume (Front).pdf"
-              download
-              className="inline-block text-sm sm:text-base bg-blue-500 text-white font-bold rounded-2xl px-4 py-2 hover:bg-blue-600 transition"
-            >
-              Download Resume
-            </a>
-            <Link to="https://github.com/mdsheikhmohaimenulislam">
-              <FaGithub size={30} />
-            </Link>
-            <a
-              className=" text-green-500"
-              href="https://wa.me/8801715755177"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp size={30} />
-            </a>
-            <Link to="https://www.facebook.com/mohymimislam">
-              <BsFacebook className="text-blue-500" size={30} />
-            </Link>
+            <CV />
+            <MediaLink />
           </div>
         </div>
       </div>
