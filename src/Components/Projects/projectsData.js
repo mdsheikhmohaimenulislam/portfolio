@@ -1,0 +1,121 @@
+export const projects = [
+  {
+    id: 1,
+    title: "GreenNest",
+    image: "/A10.png",
+    description:
+      `Plant Care Tracker is a full-stack, mobile-responsive web application designed to help users manage and monitor their indoor and outdoor plants.
+Users can add plants, track watering schedules, fertilizing routines, and monitor plant health over time. The system provides personalized dashboards with secure authentication, ensuring each user can manage their own plant collection efficiently.`,
+    technologies: [
+  "React.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Firebase/Auth",
+  "Tailwind CSS",
+  "JWT Authentication",
+  "React Router",
+  "Date-fns",
+  "Lottie React",
+  "React Tooltip"
+    ],
+    github: "https://github.com/mdsheikhmohaimenulislam/Assignment-10",
+    live: "https://greennest-dd0be.web.app/",
+    features: [
+  "User authentication (Login/Register with Google/GitHub support)",
+  "Add, update, and delete plant records",
+  "Track watering and fertilizing schedules",
+  "Private routes for user-specific data",
+  "Plant health status monitoring",
+  "Sorting by Next Watering Date and Care Level",
+  "Responsive design for mobile, tablet, desktop",
+  "Dark/Light theme toggle",
+  "Success & error notifications using toast/SweetAlert",
+  "View all plants in table format",
+  "Detailed plant profile page",
+  "User-specific dashboard (My Plants)"
+    ],
+  },
+
+  {
+    id: 2,
+    title: "World's Marathons",
+    image: "/A11.png",
+description:
+      "A full-stack Marathon Management System that allows users to create, explore, and register for marathon events. Users can manage their personal dashboard, track registrations, and view detailed marathon information. The system ensures secure authentication, role-based access, and real-time management of marathon data.",
+      technologies: [
+  "React.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Firebase Authentication",
+  "JWT Authentication",
+  "Tailwind CSS",
+  "React Router",
+  "React Datepicker",
+  "React Countdown Circle Timer",
+  "MongoDB Aggregation",
+  "REST API"
+    ],
+    github: "https://github.com/mdsheikhmohaimenulislam/Assignment-11",
+    live: "https://worldsmarathons-ab5a1.web.app/",
+    features: [
+  "User authentication (Email/Password + Google/GitHub login)",
+  "JWT-based secure private routes",
+  "Create, update, delete marathon events",
+  "View all marathons in grid layout",
+  "Marathon details page with registration system",
+  "My Marathon List (user-specific data)",
+  "My Apply List with search functionality",
+  "Registration count auto increment system",
+  "Date-based validation for registration availability",
+  "Countdown timer for upcoming marathons",
+  "Sorting marathons by createdAt (newest/oldest)",
+  "Responsive UI for all devices",
+  "Dark/Light theme toggle",
+  "Toast/SweetAlert notifications for CRUD actions",
+  "404 page and loading spinner handling"
+    ],
+  },
+
+  {
+    id: 3,
+    title: "AppStore",
+    image: "/A9.png",
+       description:
+      "A modern AppStore web platform that allows users to discover, explore, and review apps based on different categories such as Productivity, Education, and Gaming. Users can view trending apps, check detailed app information, install/uninstall apps, and submit reviews. The platform ensures secure authentication and a smooth user experience with protected routes and persistent login state.",
+      technologies: [
+  "React.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "Firebase Authentication",
+  "JWT Authentication",
+  "Tailwind CSS",
+  "React Router",
+  "React Hook Form",
+  "SweetAlert2 / React Toastify",
+  "Swiper.js (Slider)",
+  "Axios"
+    ],
+    github: "https://github.com/mdsheikhmohaimenulislam/Assignment-9",
+    live: "https://appstore-40c54.web.app/",
+      features: [
+ "User authentication (Email/Password + Google login)",
+  "Protected routes with persistent login state",
+  "Apps categorized into Productivity, Education, Gaming",
+  "Trending apps section sorted by rating",
+  "App details page with full information",
+  "Install / Uninstall toggle system",
+  "Submit and display reviews (session-based)",
+  "Rating system (1–5 stars)",
+  "Dynamic navbar with user profile",
+  "My Profile page with update functionality (Firebase updateProfile)",
+  "404 page and dynamic routing support",
+  "Responsive design for mobile, tablet, and desktop",
+  "Toast/SweetAlert notifications for all actions",
+  "Slider section for featured apps",
+  "Extra custom section for UI enhancement"
+    ],
+  },
+];

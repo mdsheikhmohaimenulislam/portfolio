@@ -1,18 +1,36 @@
 import React from "react";
 
-export default function SingleCard({ data }) {
+const SingleCard = ({ data }) => {
   return (
-    <div className="card bg-base-100 cursor-pointer shadow-xl border border-base-300 hover:scale-105 transition-transform duration-300">
-      <figure className="px-6 pt-6">
+    <div className="w-24 group cursor-pointer">
+      {/* Icon Box */}
+      <div
+        className="
+          h-20 w-20
+          mx-auto
+          rounded-xl
+          border border-white
+
+          flex items-center justify-center
+          transition-all duration-300
+          group-hover:border-blue-500
+          group-hover:-translate-y-1
+          group-hover:shadow-[0_0_20px_rgba(59,130,246,0.25)]
+        "
+      >
         <img
-          src={data.logo}
-          alt={data.name}
-          className="w-20 h-20 object-contain"
+          src={data.img}
+          alt={data.title}
+          className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110"
         />
-      </figure>
-      <div className="card-body items-center text-center">
-        <h2 className="card-title text-lg font-semibold">{data.name}</h2>
       </div>
+
+      {/* Skill Name */}
+      <h3 className="mt-3 text-center text-sm text-black font-medium leading-tight">
+        {data.title}
+      </h3>
     </div>
   );
-}
+};
+
+export default SingleCard;

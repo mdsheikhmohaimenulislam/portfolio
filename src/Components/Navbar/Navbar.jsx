@@ -23,7 +23,7 @@ const NavBar = () => {
   );
 
   return (
-    <div className="w-full sticky top-0 z-50 bg-gray-200 px-4 shadow">
+    <div className="w-full sticky top-0 z-50 bg-gray-200 px-4 shadow ">
       <div className="navbar max-w-7xl mx-auto">
         {/* Navbar Start */}
         <div className="navbar-start">

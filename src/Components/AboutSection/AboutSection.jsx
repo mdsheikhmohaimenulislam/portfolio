@@ -2,12 +2,18 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div id="about" className=" text-left mt-40 ">
-      <h2 className="text-4xl font-bold text-center underline decoration-blue-500 decoration-4 mb-8">
-        About Me
-      </h2>
+    <div id="about" className=" text-left mt-10 bg-base-300 pt-10">
+      <div className="pl-10">
+        <h2 className="text-5xl font-bold text-black">
+          About <span className="text-blue-500">Me</span>
+        </h2>
 
-      <div className="bg-base-300 p-10 rounded-xl">
+        <p className="text-gray-400 mt-3">
+          Aspiring Frontend Developer crafting modern web experiences
+        </p>
+      </div>
+
+      <div className=" p-10 rounded-xl">
         <p className="mb-6 text-lg leading-relaxed">
           Hi, I'm <strong>Mohaimenul Islam</strong>. My journey into programming
           began with curiosity and a stubborn desire to understand how things
@@ -31,15 +37,13 @@ const AboutSection = () => {
         </p>
 
         <h3 className="text-2xl font-semibold mt-10 mb-4">
-           What I Love Building
+          What I Love Building
         </h3>
         <ul className="list-disc ml-6 mb-6 text-lg leading-relaxed">
           <li>Turning design ideas into real, pixel-perfect interfaces.</li>
           <li>Solving tricky UI/UX challenges in creative ways.</li>
 
-          <li>
-             Playing video games—especially immersive story-driven ones.
-          </li>
+          <li>Playing video games—especially immersive story-driven ones.</li>
         </ul>
 
         <h3 className="text-2xl font-semibold mt-10 mb-4"> My Mindset</h3>

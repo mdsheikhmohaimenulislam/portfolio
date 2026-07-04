@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="mt-40">
+    <div id="contact" className="mt-10 bg-base-300 pt-10">
       <h1 className="text-3xl text-center font-bold underline decoration-blue-500 decoration-4 mb-2">
         CONTACT
       </h1>
