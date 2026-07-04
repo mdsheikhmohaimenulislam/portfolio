@@ -14,99 +14,115 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILL_SERVICEID,
-        import.meta.env.VITE_EMAILL_TEMPLATEID,
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_TEMPLATE_ID,
         form.current,
-        {
-          publicKey: import.meta.env.VITE_EMAILL_PUBLICKEY,
-        }
+        import.meta.env.VITE_EMAIL_PUBLIC_KEY,
       )
       .then(
-        (res) => {
-          console.log("Email sent:", res);
-          toast.success("Message Sent Successfully");
+        (result) => {
+          console.log("Email sent:", result.text);
+          toast.success("Message sent successfully!");
+          e.target.reset();
         },
         (error) => {
           console.error("Email sending failed:", error);
-          toast.error("Failed to send message");
-        }
+          toast.error("Failed to send message.");
+        },
       );
-
-    e.target.reset();
   };
+
+
 
   return (
     <div id="contact" className="mt-10 bg-base-300 pt-10">
-      <h1 className="text-3xl text-center font-bold underline decoration-blue-500 decoration-4 mb-2">
-        CONTACT
-      </h1>
-      <p className="mb-10 text-center">
-        I’d love to hear from you—reach out for any opportunities or questions!
-      </p>
-      <section className="py-6 dark:bg-gray-100 dark:text-gray-900">
-        <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-          {/* Left Side Info */}
-          <div className="py-6 md:py-0 md:px-6">
-            <h1 className="text-4xl font-bold">Connect With Me</h1>
-            <p className="pt-2 pb-4">
-              Fill in the form to start a conversation
-            </p>
-            <div className="space-y-4">
-              <p className="flex items-center">
-                <CiLocationOn size={25} />{" "}
-                <span className="ml-2">BANGLADESH DHAKA</span>
+      <div className="mb-10 pl-6">
+        <h2 className="text-5xl font-bold text-black">
+          Let’s <span className="text-blue-500">Connect</span>
+        </h2>
+
+        <p className="text-gray-400 mt-3">
+          Have an idea or project in mind? Let’s connect and build something
+          amazing together.
+        </p>
+      </div>
+      <section className="py-16 dark:bg-base-300 dark:text-gray-900">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 md:divide-x">
+          {/* LEFT SIDE */}
+          <div className="space-y-6 md:pr-10">
+            <div>
+              <h1 className="text-4xl font-bold">
+                Let’s <span className="text-blue-500">Connect</span>
+              </h1>
+              <p className="pt-3 text-gray-600">
+                Have a project in mind? Feel free to reach out and let’s build
+                something together.
               </p>
-              <p className="flex items-center">
-                <FaWhatsappSquare className=" text-green-500" size={25} /> <span className="ml-2">+8801715755177</span>
+            </div>
+
+            <div className="space-y-5 text-gray-700">
+              <p className="flex items-center gap-3">
+                <CiLocationOn size={22} className="text-blue-500" />
+                <span>BANGLADESH, DHAKA</span>
               </p>
-              <p className="flex items-center">
-                📞 <span className="ml-2">+8801715755177</span>
+
+              <p className="flex items-center gap-3">
+                <FaWhatsappSquare size={22} className="text-green-500" />
+                <span>+8801715755177</span>
               </p>
-              <p className="flex items-center">
-                <AiOutlineMail className="text-yellow-800" size={25} />{" "}
-                <span className="ml-2">mdsheikhmohaimenulislam@gmail.com</span>
+
+              <p className="flex items-center gap-3">
+                📞 <span>+8801715755177</span>
+              </p>
+
+              <p className="flex items-center gap-3">
+                <AiOutlineMail size={22} className="text-yellow-600" />
+                <span className="break-all">
+                  mdsheikhmohaimenulislam@gmail.com
+                </span>
               </p>
             </div>
           </div>
 
-          {/* Right Side Form */}
+          {/* RIGHT SIDE FORM */}
           <form
             ref={form}
             onSubmit={handleSubmit}
-            className="flex flex-col py-6 space-y-6 md:py-0 md:px-6"
+            className="space-y-5 md:pl-10"
           >
-            <label className="block">
-              <input
-                name="name"
-                type="text"
-                placeholder="Your Name"
-                required
-                className="block p-2 outline-blue-400 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 dark:bg-gray-100"
-              />
-            </label>
-            <label className="block">
-              <input
-                name="email"
-                type="email"
-                placeholder="Your Email"
-                required
-                className="block p-2 outline-blue-400 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 dark:bg-gray-100"
-              />
-            </label>
-            <label className="block">
-              <textarea
-                name="message"
-                rows="3"
-                placeholder="Your Message"
-                required
-                className="block p-2 outline-blue-400 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 dark:bg-gray-100"
-              ></textarea>
-            </label>
+            <h2 className="text-2xl font-semibold mb-2">
+              Send a <span className="text-blue-500">Message</span>
+            </h2>
+
+            <input
+              name="name"
+              type="text"
+              placeholder="Your Name"
+              required
+              className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+
+            <input
+              name="email"
+              type="email"
+              placeholder="Your Email"
+              required
+              className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Your Message"
+              required
+              className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            ></textarea>
+
             <button
               type="submit"
-              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 hover:bg-blue-500 hover:text-white cursor-pointer bg-blue-100"
+              className="w-full py-3 text-lg rounded-md bg-blue-500 text-white hover:bg-blue-600 transition cursor-pointer"
             >
-              Submit
+              Send Message
             </button>
           </form>
         </div>
