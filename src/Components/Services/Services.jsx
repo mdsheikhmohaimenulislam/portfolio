@@ -6,7 +6,7 @@ import ServiceSingleCard from "./ServiceSingleCard";
 const Services = () => {
   return (
     <>
-      <section className="py-16 bg-base-300 mt-10">
+      <section id="service" className="py-16 bg-base-300 mt-10">
         <div className="max-w-6xl mx-auto px-4">
           {/* Heading */}
           <div className="mb-12">

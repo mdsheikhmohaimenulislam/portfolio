@@ -46,7 +46,7 @@ const Footer = () => {
 
         {/* Nav Links */}
         <ul className="flex flex-wrap justify-center gap-4 text-center">
-          {["home", "project", "skills", "about", "contact"].map((item) => (
+          {["home", "about", "skills", "service", "project", "contact"].map((item) => (
             <li key={item}>
               <Link
                 to={item}

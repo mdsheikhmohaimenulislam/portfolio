@@ -41,7 +41,7 @@ const Banner = () => {
             </span>
           </h3>
 
-          <p className="mb-6">
+          <p className="mb-8">
             I’m a Front End Developer with hands-on experience in building
             dynamic web applications. I’m always curious to learn new
             technologies and improve my skills. Eager to learn, grow, and
@@ -49,7 +49,7 @@ const Banner = () => {
             environment.
           </p>
 
-          <div className="flex mb-3 gap-2 items-center justify-center md:justify-center ">
+          <div className=" flex mb-3 gap-2 items-center justify-center md:justify-center ">
             <CV />
             <MediaLink />
           </div>

@@ -4,21 +4,23 @@ import CV from "../Banner/CV";
 const NavBar = () => {
   const navItems = (
     <>
-      {["home", "project", "skills", "about", "contact"].map((item) => (
-        <li key={item}>
-          <Link
-            to={item}
-            smooth={true}
-            duration={500}
-            offset={-80}
-            spy={true}
-            activeClass="text-blue-500 font-extrabold border-b-2 border-blue-500"
-            className="text-lg font-semibold cursor-pointer hover:text-blue-500"
-          >
-            {item.charAt(0).toUpperCase() + item.slice(1)}
-          </Link>
-        </li>
-      ))}
+      {["home", "about", "skills", "service", "project", "contact"].map(
+        (item) => (
+          <li key={item}>
+            <Link
+              to={item}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              spy={true}
+              activeClass="text-blue-500 font-extrabold border-b-2 border-blue-500"
+              className="text-lg font-semibold cursor-pointer hover:text-blue-500"
+            >
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </Link>
+          </li>
+        ),
+      )}
     </>
   );
 
@@ -40,7 +42,7 @@ const NavBar = () => {
                   <img src="/logo1.png" alt="Logo" />
                 </div>
               </div>
-              <h1 className="hidden md:block text-2xl font-extrabold">
+              <h1 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-extrabold whitespace-nowrap">
                 Mohaimenul Islam
               </h1>
             </div>
@@ -55,7 +57,9 @@ const NavBar = () => {
         {/* Navbar End */}
         <div className="navbar-end">
           {/* Resume Button */}
-          <CV />
+          <div className="hidden md:block">
+            <CV />
+          </div>
 
           {/* Mobile Dropdown */}
           <div className="dropdown dropdown-end lg:hidden ml-2">
@@ -80,15 +84,6 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52 space-y-2"
             >
               {navItems}
-              <li>
-                <a
-                  href="/MohaimenulIslam resume (Front).pdf"
-                  download
-                  className="bg-blue-500 text-white px-3 py-2 rounded-lg font-semibold hover:bg-blue-600 transition"
-                >
-                  Resume
-                </a>
-              </li>
             </ul>
           </div>
         </div>
