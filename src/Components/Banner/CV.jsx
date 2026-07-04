@@ -1,7 +1,7 @@
 import { FaEye, FaDownload } from "react-icons/fa";
 
 export default function CV() {
-  const pdfUrl = "/public/MohaimenulIslam res(Full Stack Web Developer).pdf";
+  const pdfUrl = "/MohaimenulIslam_res(Full_Stack_Web_Developer).pdf";
 
   return (
     <div className="flex items-center gap-2">
@@ -9,7 +9,7 @@ export default function CV() {
         href={pdfUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn btn-sm bg-gray-700 text-white hover:bg-gray-800"
+        className="btn btn-sm bg-blue-500 text-white hover:bg-blue-600"
       >
         <FaEye />
         Resume
