@@ -4,6 +4,7 @@ import {
   FaMobileAlt,
   FaBug,
   FaRocket,
+  FaServer,
 } from "react-icons/fa";
 
 import { IoIosLink } from "react-icons/io";
@@ -11,32 +12,32 @@ import { IoIosLink } from "react-icons/io";
 const services = [
   {
     title: "Frontend Development",
-    desc: "I build responsive web apps using React & Tailwind.",
+    desc: "Build modern, responsive UIs using React & Tailwind CSS.",
     icon: FaCode,
   },
   {
-    title: "UI Implementation",
-    desc: "Convert design into pixel-perfect websites.",
+    title: "UI/UX Implementation",
+    desc: "Convert designs into clean, pixel-perfect interfaces.",
     icon: FaPaintBrush,
   },
   {
+    title: "Backend Development",
+    desc: "Develop secure REST APIs using Node.js & Express.",
+    icon: FaServer,
+  },
+  {
     title: "API Integration",
-    desc: "Connect frontend with backend APIs.",
+    desc: "Connect frontend with backend services efficiently.",
     icon: IoIosLink,
   },
   {
     title: "Responsive Design",
-    desc: "Make websites perfect on all devices.",
+    desc: "Ensure seamless experience across all devices.",
     icon: FaMobileAlt,
   },
   {
-    title: "Bug Fixing",
-    desc: "Identify and fix issues to improve performance.",
-    icon: FaBug,
-  },
-  {
     title: "Performance Optimization",
-    desc: "Improve speed and efficiency of web apps.",
+    desc: "Improve speed, SEO, and overall application performance.",
     icon: FaRocket,
   },
 ];
