@@ -90,7 +90,7 @@ const ProjectDetails = () => {
         </a>
 
         <Link
-          to="/#project"
+          to="/"
           className="btn"
         >
           Back
