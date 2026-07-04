@@ -5,11 +5,13 @@ import { projects } from "./projectsData";
 const Projects = () => {
   return (
     <section id="project" className="mt-10 px-4 md:px-0 bg-base-300 pt-10">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold underline decoration-blue-500 decoration-4">
-          MY PROJECTS
-        </h1>
-        <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
+      {/* Heading */}
+      <div className="mb-10 pl-6">
+        <h2 className="text-5xl font-bold text-black">
+          MY <span className="text-blue-500">PROJECTS</span>
+        </h2>
+
+        <p className="text-gray-400 mt-3">
           A showcase of my projects, skills and experience.
         </p>
       </div>
@@ -39,16 +41,14 @@ const Projects = () => {
 
                 {/* Tech */}
                 <div className="flex flex-wrap gap-2 mt-3">
-                  {project.technologies
-                    .slice(0, 4)
-                    .map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-1 text-xs rounded-full bg-base-300"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                  {project.technologies.slice(0, 4).map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2 py-1 text-xs rounded-full bg-base-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
 
                 {/* Buttons */}
