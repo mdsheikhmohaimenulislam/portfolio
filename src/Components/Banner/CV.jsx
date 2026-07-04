@@ -1,7 +1,7 @@
 import { FaEye, FaDownload } from "react-icons/fa";
 
 export default function CV() {
-  const pdfUrl = "/MohaimenulIslam-Resume-FrontEnd-Developer.pdf";
+  const pdfUrl = "/public/MohaimenulIslam res(Full Stack Web Developer).pdf";
 
   return (
     <div className="flex items-center gap-2">
