@@ -39,7 +39,7 @@ const NavBar = () => {
             <div className="flex items-center gap-2">
               <div className="avatar">
                 <div className="w-10 rounded-full bg-blue-500">
-                  <img src="/logo1.png" alt="Logo" />
+                  <img src="/logo.jpeg" alt="Logo" />
                 </div>
               </div>
               <h1 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-extrabold whitespace-nowrap">

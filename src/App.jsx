@@ -12,9 +12,16 @@ function App() {
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+<a
+  href="/"
+  className="inline-block"
+>
+  <img
+    src={reactLogo}
+  alt="React Logo"
+  className="w-16 h-16 md:w-24 md:h-24 lg:w-50 lg:h-50"
+  />
+</a>
       </div>
       <h1>Vite + React</h1>
       <div className="card">

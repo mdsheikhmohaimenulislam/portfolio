@@ -67,12 +67,13 @@ const Projects = () => {
                     target="_blank"
                     className="btn bg-blue-500 text-white "
                   >
+                    <FaArrowUpRightFromSquare />
                     Live
                   </a>
 
                   <Link
                     to={`/project/${project.id}`}
-                    className="btn btn-outline"
+                    className="btn border border-blue-500"
                   >
                     <FaEye />
                     Details

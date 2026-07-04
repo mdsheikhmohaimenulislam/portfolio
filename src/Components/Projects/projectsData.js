@@ -11,7 +11,7 @@ Users can add plants, track watering schedules, fertilizing routines, and monito
   "Node.js",
   "Express.js",
   "MongoDB",
-  "Firebase/Auth",
+  "Firebase Authentication",
   "Tailwind CSS",
   "JWT Authentication",
   "React Router",

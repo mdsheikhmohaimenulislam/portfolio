@@ -22,7 +22,7 @@ const Banner = () => {
         </Tilt>
 
         {/* Text Content */}
-        <div className="text-center lg:text-left max-w-xl">
+        <div className="text-center lg:text-left max-w-3xl">
           <h3 className="text-3xl font-extrabold mb-2">Hi, I'm</h3>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-2">
